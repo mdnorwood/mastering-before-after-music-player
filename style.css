@@ -64,27 +64,29 @@ h4 {
   margin: 5px 0 5px 0;
 }
 
-.btnA {
+button.btnA {
+  padding: 20px;
   display: flex;
   align-items: center;
   color: rgb(129, 129, 129);
 }
 
-.btnA:hover {
+button.btnA:hover {
   filter: brightness(80%);
 }
 
-.btnA:active {
+button.btnA:active {
   filter: brightness(80%);
 }
 
-.btnB {
+button.btnB {
   display: flex;
   align-items: center;
   color: rgb(129, 129, 129);
+  padding: 10px;
 }
 
-.btnB:hover {
+button.btnB:hover {
   filter: brightness(80%);
 }
 

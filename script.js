@@ -18,46 +18,46 @@ const songList = {
   A: [
     {
       id: 1,
-      name: 'jacinto-1',
-      displayName: 'Electric Chill Machine',
-      artist: 'Jacinto Design',
-      type: 'Original'
+      name: 'The-Low-Mids-Grasping-at-Straws-ORIGINAL-MIX',
+      displayName: 'Grasping at Straws',
+      artist: 'The Low Mids',
+      type: 'Pre-master'
     },
     {
       id: 2,
-      name: 'jacinto-2',
-      displayName: 'Seven Nation Army (Remix)',
-      artist: 'Jacinto Design',
-      type: 'Original'
+      name: 'Small-Wonders-The-Jam-ORIGINAL-MIX',
+      displayName: 'The Jam',
+      artist: 'Small Wonders',
+      type: 'Pre-master'
     },
     {
       id: 3,
-      name: 'jacinto-3',
-      displayName: 'Goodnight, Disco Queen',
-      artist: 'Jacinto Design',
-      type: 'Original'
+      name: 'MDNorwood-Slow-it-Down-ORIGINAL-MIX',
+      displayName: 'Slow It Down',
+      artist: 'M.D. Norwood',
+      type: 'Pre-master'
     }
   ],
   B: [
     {
       id: 4,
-      name: 'jacinto-1',
-      displayName: 'Electric Chill Machine',
-      artist: 'Jacinto Design',
+      name: 'The-Low-Mids-Grasping-at-Straws-MASTER',
+      displayName: 'Grasping at Straws',
+      artist: 'The Low Mids',
       type: 'Master'
     },
     {
       id: 5,
-      name: 'jacinto-2',
-      displayName: 'Seven Nation Army (Remix)',
-      artist: 'Jacinto Design',
+      name: 'Small-Wonders-The-Jam-MASTER',
+      displayName: 'The Jam',
+      artist: 'Small Wonders',
       type: 'Master'
     },
     {
       id: 6,
-      name: 'jacinto-3',
-      displayName: 'Goodnight, Disco Queen',
-      artist: 'Jacinto Design',
+      name: 'MDNorwood-Slow-it-Down-MASTER',
+      displayName: 'Slow It Down',
+      artist: 'M.D. Norwood',
       type: 'Master'
     }
   ]
@@ -90,7 +90,7 @@ function loadSong(song) {
   title.textContent = song.displayName;
   artist.textContent = song.artist;
   type.textContent = song.type;
-  music.src =  `music/${song.name}.mp3`;
+  music.src =  `music/${song.name}.wav`;
   image.src =`img/${song.name}.jpg`;
 }
 
@@ -101,6 +101,8 @@ let isButtonA = true;
 let isButtonB = false;
 
 buttonA.style.color = 'red';
+buttonA.style.padding = '10px';
+buttonB.style.padding = '10px';
 
 //Load Initial songList as A
 let loadSongList = songList.A;
